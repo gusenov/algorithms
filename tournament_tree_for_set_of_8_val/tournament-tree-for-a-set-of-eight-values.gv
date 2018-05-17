@@ -1,0 +1,39 @@
+graph {
+    label="Дерево турнира для набора из восьми значений";
+    
+    level1_node1[label = "8"]
+    
+    level2_node1[label = "6"];
+    level2_node2[label = "8"];
+    
+    "level1_node1" -- "level2_node1";
+    "level1_node1" -- "level2_node2";
+    
+    level3_node1[label = "6"];
+    level3_node2[label = "3"];
+    level3_node3[label = "8"];
+    level3_node4[label = "5"];
+    
+    "level2_node1" -- "level3_node1";
+    "level2_node1" -- "level3_node2";
+    "level2_node2" -- "level3_node3";
+    "level2_node2" -- "level3_node4";
+    
+    level4_node1[label = "4"];
+    level4_node2[label = "6"];
+    level4_node3[label = "3"];
+    level4_node4[label = "2"];
+    level4_node5[label = "8"];
+    level4_node6[label = "7"];
+    level4_node7[label = "1"];
+    level4_node8[label = "5"];
+    
+    "level3_node1" -- "level4_node1";
+    "level3_node1" -- "level4_node2";
+    "level3_node2" -- "level4_node3";
+    "level3_node2" -- "level4_node4";
+    "level3_node3" -- "level4_node5";
+    "level3_node3" -- "level4_node6";
+    "level3_node4" -- "level4_node7";
+    "level3_node4" -- "level4_node8";
+}
